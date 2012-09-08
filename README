@@ -1,7 +1,7 @@
 =============================
 
 The Personal Page
-Version 1.0
+Version 1.1
 January 19, 2010
 Created by Naz Hamid
 Original: www.nazhamid.com
@@ -35,6 +35,14 @@ Usage is simple:
 4) Upload all the files, including the MIT and GPL licences. 
 
 5) You can switch the position of the monogram and text as seen in timlum.com. 
+
+=============================
+Change Notes:
+=============================
+
+v1.1
+— Added responsive design for mobile devices
+— Mobile devices no longer load the background image to save the bandwidth and performance hit.
 
 
 
