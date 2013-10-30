@@ -1,0 +1,7 @@
+v1.1
+ - Added responsive design for mobile devices
+ - Mobile devices no longer load the background image to save the bandwidth and performance hit.
+
+v1.2
+ - Improved a documentation
+ - Updated demo links
