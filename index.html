@@ -18,7 +18,7 @@
 		p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
 		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
 		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
-		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
+		#logo { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
 		#about { width: 360px; padding: 0 0 0 150px; margin: -35px 50px 0 auto !important; }
 		@media (max-width: 767px) {
 			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
@@ -31,8 +31,8 @@
 <body>
 
 <!-- swap out for a logo -->
-<div id="monogram">
-	<img src="monogram.png" />
+<div id="logo">
+	<img src="logo.png" />
 </div>
 
 <!-- swap out for information about yourself -->
@@ -49,7 +49,7 @@
 $(function(){
      $(window).resize(function(){
          if($(this).width() >= 767){
-             $.backstretch("nh_bg.jpg", {fade: 150});
+             $.backstretch("bg.jpg", {fade: 150});
          }
       })
       .resize();//trigger resize on page load
