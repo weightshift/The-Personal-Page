@@ -4,6 +4,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>sherman:github</title>
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 	<meta http-equiv="pragma" content="no-cache" />
 	<meta name="robots" content="all" />
 	<meta name="MSSmartTagsPreventParsing" content="true" />
@@ -16,13 +17,16 @@
 		* { padding: 0; margin: 0; }
 		body { background-color: #333; }
 		p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
-		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
+		a { color: #fff; font-weight: bold; text-decoration: none; }
+		a:hover { color: #AAA; }
+		a:visited { text-decoration: none; }
+		a:active { color: #AAA; text-decoration: none; }
+		.icons>a>i {padding: 0.1em; }
 		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
-		#about { width: 360px; padding: 0 0 0 150px; margin: -35px 50px 0 auto !important; }
+		#about { width: 360px; padding: 2em; margin: -35px 50px 0 auto !important; background: rgba(0,0,0,0.5); }
 		@media (max-width: 767px) {
 			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
-			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; background: rgba(0,0,0,0.5); }
 			background-image { opacity: 0.2; }
 		}
 	</style>
@@ -39,7 +43,12 @@
 <div id="about">
 	<p>Sherman is the Lead Developer at The Koad Company. Based in Singapore, he works primarily on the web-related and back-end aspects of software development. His experience in hardware and network systems also makes him in charge of IT Systems Implementation for clients.</p>
 	<p>In his free time with a laptop, he contributes on StackOverflow and GitHub. If he's at his desktop, he'll either be playing games on Steam, experimenting with MeteorJS, or tinkering with his Arduino-based DIY ventilation system for his home-server.</p>
-	<p></p>
+	<p class="icons">
+		<a href="https://github.com/shrmnk"><i class="fa fa-github fa-5x"></i></a>
+		<a href="https://linkedin.com/in/shrmn"><i class="fa fa-linkedin-square fa-5x"></i></a>
+		<a href="https://stackoverflow.com/u/89969"><i class="fa fa-stack-overflow fa-5x"></i></a>
+		<a href="https://www.instagram.com/shrmnk"><i class="fa fa-instagram fa-5x"></i></a>
+	</p>
 </div>
 
 <!--include jquery & backstretch-->
