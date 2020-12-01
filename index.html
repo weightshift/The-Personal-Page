@@ -14,7 +14,7 @@
 	<![endif]-->	
 	<style>
 		* { padding: 0; margin: 0; }
-		body { background-color: #333; }
+		body { background-color: #333; background-image: url(nh_bg.jpg); }
 		p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
 		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
 		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
@@ -46,13 +46,20 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.backstretch.min.js"></script>
 <script type="text/javascript">
+var minScreenWidth = 767,
+    bgImg;
 $(function(){
-     $(window).resize(function(){
-         if($(this).width() >= 767){
-             $.backstretch("nh_bg.jpg", {speed: 150});
-         }
-      })
-      .resize();//trigger resize on page load
+
+  bgImg = $('body').css('background-image').replace(/url\((.+)\)/,'$1');
+  $('body').css('background-image','');
+
+  $(window).resize(function(){
+    if($(this).width() >= minScreenWidth){
+      $.backstretch(bgImg, {speed: 150});
+    }
+  })
+  .resize();//trigger resize on page load
+
 });
 </script>
 
