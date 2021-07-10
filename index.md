@@ -1,35 +1,3 @@
-<!doctype html>
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>N.H.</title>
-	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
-	<meta http-equiv="pragma" content="no-cache" />
-	<meta name="robots" content="all" />
-	<meta name="MSSmartTagsPreventParsing" content="true" />
-	<meta http-equiv="imagetoolbar" content="false" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->	
-	<style>
-		* { padding: 0; margin: 0; }
-		body { background-color: #333; }
-		p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
-		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
-		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
-		#about { width: 360px; padding: 0 0 0 150px; margin: -35px 50px 0 auto !important; }
-		@media (max-width: 767px) {
-			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
-			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
-			background-image { opacity: 0.2; }
-		}
-	</style>
-</head>	
-    
-<body>
-
 <!-- swap out for a logo -->
 <div id="monogram">
 	<img src="monogram.png" />
@@ -49,12 +17,10 @@
 $(function(){
      $(window).resize(function(){
          if($(this).width() >= 767){
-             $.backstretch("nh_bg.jpg", {speed: 150});
+             $.backstretch("nh_bg.jpg", {speed: 150});//insert image for wallpaper by changing path of "nh_bg.jpg" to whatever the path to your picture is.
          }
       })
       .resize();//trigger resize on page load
 });
 </script>
 
-</body>	
-</html>
